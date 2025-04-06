@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 // configure mouse
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 10  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 1    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 300  // default: 600
+//#define ZMK_POINTING_DEFAULT_SCRL_VAL 1    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
 / {
