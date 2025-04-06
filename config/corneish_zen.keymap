@@ -3,15 +3,15 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-  chosen {
-    zmk,matrix_transform = &default_transform;
-    //zmk,matrix_transform = &five_column_transform;
-  };
+    chosen {
+        zmk,physical-layout = &foostan_corne_6col_layout;
+        // zmk,physical-layout = &foostan_corne_5col_layout;
+    };
 };
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
                 default_layer {
                         label = "QWERTY";
@@ -42,10 +42,10 @@
                         >;
                 };
 
-                raise_layer {
-                        label = "SYMBOL";
+        raise_layer {
+            display-name = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    |     |     |     |   |     |     |     |
@@ -57,4 +57,5 @@
                         >;
                 };
         };
+    };
 };
